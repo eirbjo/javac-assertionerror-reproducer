@@ -8,7 +8,7 @@ The reproduce.sh script:
 The reststop build should fail in the maven-plugin/ Maven module with an AssertionError in javac:
 
 
-``
+```
 Exception in thread "main" java.lang.AssertionError
 	  at jdk.compiler/com.sun.tools.javac.util.Assert.error(Assert.java:155)
 	  at jdk.compiler/com.sun.tools.javac.util.Assert.check(Assert.java:46)
@@ -60,4 +60,8 @@ Exception in thread "main" java.lang.AssertionError
 	  at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
 	  at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	  at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
-``
+```
+
+Here's a debugger screenshot showing that there are in total 6 diagnostis, all related to missing java.xml.bind:
+
+![Debugger](debugger-diagnostic.png)

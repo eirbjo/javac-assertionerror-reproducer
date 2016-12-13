@@ -5,7 +5,8 @@ The reproduce.sh script:
 * Downloads maven-compiler-plugin trunk (3.1-SNAPSHOT) and builds it
 * Downloads reststop, checks out the j9 branch and builds it
 
-This should result in:
+The reststop build should fail in the reststop-maven-plugin Maven module with an AssertionError in javac:
+
 
 ``
 Exception in thread "main" java.lang.AssertionError

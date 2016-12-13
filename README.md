@@ -1,6 +1,6 @@
 # javac AssertionError reproducer
 
-The reprouce.sh script:
+The reproduce.sh script:
 
 * Downloads maven-compiler-plugin trunk (3.1-SNAPSHOT) and builds it
 * Downloads reststop, checks out the j9 branch and builds it

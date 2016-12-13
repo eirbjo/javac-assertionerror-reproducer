@@ -65,3 +65,12 @@ Exception in thread "main" java.lang.AssertionError
 Here's a debugger screenshot showing that there are in total 6 diagnostis, all related to missing java.xml.bind:
 
 ![Debugger](debugger-diagnostic.png)
+
+The particular line that causes the error is this method signature (at JAXBContext):
+
+```
+private Map<String, List<PluginConfig>> findConfigs(JAXBContext context) throws MojoFailureException, MojoExecutionException, JAXBException, IOException {
+    ...
+    return configs;
+}
+```
